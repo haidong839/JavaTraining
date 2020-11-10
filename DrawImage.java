@@ -30,10 +30,10 @@ public class DrawImage extends Frame {
 		Graphics g1 = image.createGraphics();
 		g1.setColor(Color.BLUE);
 		g1.fillRect(0, 0, 200, 50);
-        g1.setColor(Color.RED);
-        Font myFont = new Font("Serif", Font.BOLD, 12);
-        g1.setFont(myFont);
-        g1.drawString("hello",  10, 10);
+		g1.setColor(Color.RED);
+		Font myFont = new Font("Serif", Font.BOLD, 12);
+		g1.setFont(myFont);
+		g1.drawString("hello", 10, 10);
 		try {
 			File f = new File("C:\\java\\CustomImage.jpg");
 			ImageIO.write(image, "jpg", f);
@@ -42,7 +42,7 @@ public class DrawImage extends Frame {
 		}
 
 	}
-	
+
 	public static void main(String[] args) {
 		DrawImage di = new DrawImage();
 		di.setVisible(true);
